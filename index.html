@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            min-height: 20em;
+        }
+
+        .common {
+            width: 24em;
+            height: 15em;
+        }
+
+        .outer {
+            position: relative;
+            /* margin: 20em auto; */
+            box-shadow: 0em 0em 0.5em 0.2em rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+        .b1{
+            background-image: url(./turkey.jpg);
+            background-size: cover;
+        }
+        .b2{
+            background-image: url(./germany.jpg);
+            background-size: cover;
+        }
+        .b3{
+            background-image: url(./france.jpg);
+            background-size: cover;
+        }
+        .b4{
+            background-image: url(./england.jpg);
+            background-size: cover;
+        }
+        .inner {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        .top {
+            top: -15em;
+        }
+
+        .left {
+            left: -24em;
+        }
+
+        .bottom {
+            bottom: -15em;
+        }
+
+        .right {
+            right: -24em;
+        }
+
+        .outer:hover .top {
+            top: 0em;
+        }
+
+        .outer:hover .left {
+            left: 0em;
+        }
+
+        .outer:hover .bottom {
+            bottom: 0em;
+        }
+
+        .outer:hover .right {
+            right: 0em;
+        }
+
+        .inner>a {
+            align-items: center;
+            text-decoration: none;
+            width: 3em;
+            height: 3em;
+            background: white;
+            border-radius: 3em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="common outer b1">
+            <div class="common inner top">
+                <a href="#"><i class="fa-solid fa-heart like"
+                        style="color: #183153; font-size: 25px; .like:hower{color: blue;}"></i></a>
+                <a class="b2" href="./turkey.jpg" download="Winmill.jpg"><i class="fa-solid fa-download"
+                        style="color: #183153; font-size: 25px;"></i></a>
+            </div>
+        </div>
+        <div class="common outer b2">
+            <div class="common inner left">
+                <a href="#"><i class="fa-solid fa-heart like"
+                        style="color: #183153; font-size: 25px; .like:hower{color: blue;}"></i></a>
+                <a class="b2" href="./germany.jpg" download="Winmill.jpg"><i class="fa-solid fa-download"
+                        style="color: #183153; font-size: 25px;"></i></a>
+            </div>
+        </div>
+        <div class="common outer  b3">
+            <div class="common inner bottom">
+                <a href="#"><i class="fa-solid fa-heart like"
+                        style="color: #183153; font-size: 25px; .like:hower{color: blue;}"></i></a>
+                <a class="b2" href="./france.jpg" download="Winmill.jpg"><i class="fa-solid fa-download"
+                        style="color: #183153; font-size: 25px;"></i></a>
+            </div>
+        </div>
+        <div class="common outer b4">
+            <div class="common inner right">
+                <a href="#"><i class="fa-solid fa-heart like"
+                        style="color: #183153; font-size: 25px; .like:hower{color: blue;}"></i></a>
+                <a class="b2" href="./england.jpg" download="Winmill.jpg"><i class="fa-solid fa-download"
+                        style="color: #183153; font-size: 25px;"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
